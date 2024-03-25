@@ -5,7 +5,7 @@ using UnityEngine;
 // 유닛이 가지고 있을 데이터
 namespace ProjectG.DB
 {
-    public class UnitData
+    public class BuildingData
     {
         // 피지컬데이터
         // hp
@@ -56,7 +56,6 @@ namespace ProjectG.DB
         public bool isGround = true;
         public bool isHide = false;
         public bool isDetect = false;
-        public bool isHunt = false; // 중립유닛 공격가능여부
         public bool isControl = false; // 유저가 컨트롤할수있는지 여부
         public bool isAttack = true;
         public bool isATG = true; // Attack To Ground

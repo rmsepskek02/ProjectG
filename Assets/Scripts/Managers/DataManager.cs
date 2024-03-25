@@ -1,10 +1,11 @@
+using ProjectG.Util;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace ProjectG.Managers
 {
-    public class DataManager : MonoBehaviour
+    public class DataManager : Singleton<DataManager>
     {
         // Start is called before the first frame update
         void Start()
