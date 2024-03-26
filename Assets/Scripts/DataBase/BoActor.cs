@@ -7,29 +7,15 @@ using ProjectG.StaticData;
 namespace ProjectG.DB
 {
     [Serializable]
-    public class BoActor
+    public class BoActor : BoObject
     {
-        /// 인게임 데이터
-        public string nickName;
-        public string resourcePath;
-        public int hp;
-        public int mp;
-        public int barrior;
-        public int armor;
-        public int visualRange;
-        public int size;
-        public string atrType;
-        public int kind;
-        public string objectType;
-        public bool isGround;
-        public int moveSpeed;
-        public int generationRate;
         /// SD 데이터
         public SDActor sdActor;
 
-        public BoActor(SDActor sdActor)
+        public BoActor(SDObject sdObject)
+            : base(sdObject)
         {
-            this.sdActor = sdActor;
+            sdActor = sdObject as SDActor;
         }
     }
 }

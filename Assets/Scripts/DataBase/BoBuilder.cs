@@ -9,13 +9,15 @@ namespace ProjectG.DB
     [Serializable]
     public class BoBuilder : BoActor
     {
+        /// 인게임 데이터
+        public bool isControl;
         /// SD 데이터
-        public SDBuilder sDBuilder;
+        public SDBuilder sdBuilder;
 
-        public BoBuilder(SDActor sdActor)
-            : base(sdActor)
+        public BoBuilder(SDObject sdObject)
+            : base(sdObject)
         {
-            sDBuilder = sdActor as SDBuilder;
+            sdBuilder = sdObject as SDBuilder;
         }
     }
 }

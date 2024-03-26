@@ -19,14 +19,14 @@ MonoBehaviour:
   mp: 5
   barrior: 5
   armor: 1
-  visualRange: 0
-  size: 0
-  atrType: 
-  kind: 0
-  objectType: 
-  isGround: 0
-  moveSpeed: 0
-  generationRate: 0
+  visualRange: 2
+  size: 3
+  atrType: 4
+  kind: 5
+  objectType: 6
+  isGround: 1
+  moveSpeed: 7
+  generationRate: 8
   consume: 
   resourceType: []
   isControl: 1

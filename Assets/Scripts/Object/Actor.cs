@@ -5,12 +5,21 @@ using UnityEngine;
 
 namespace ProjectG.Object
 {
-    public abstract class Actor : Obj
+    public abstract class Actor : Object
     {
         public BoActor boActor;
-        public virtual void Initialize(BoActor boActor)
+        public override void Initialize(BoObject boActor)
         {
-            this.boActor = boActor;
+            base.Initialize(boActor);
+            this.boActor = boActor as BoActor;
+            Debug.Log("Actor Initialize");
+            SetStatsActor();
+        }
+
+        protected void SetStatsActor()
+        {
+            //base.SetStatsObject();
+            Debug.Log("Actor SetStats");
         }
     }
 }
